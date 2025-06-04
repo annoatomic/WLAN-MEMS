@@ -1,0 +1,15 @@
+dependencies:
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.4.0
+  protocol_examples_common:
+    component_hash: null
+    source:
+      path: C:\Users\leona\.platformio\packages\framework-espidf\examples\common_components\protocol_examples_common
+      type: local
+    version: '*'
+manifest_hash: 7277f6b1505664f4719aaebcd1ef625e360ff401d534a2ff8c8cda1b1993e869
+target: esp32
+version: 1.0.0
