@@ -1,0 +1,70 @@
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\leona\Desktop\SoSe25\BA\MCU_boards\ESP32\WLAN_MEMS\build\esp-idf\esptool_py && C:\Users\leona\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/leona/esp_container/v5.4.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/partition_table/partition-table.bin C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/WLAN_MEMS.bin"
+WLAN_MEMS.bin binary size 0xbe940 bytes. Smallest app partition is 0x100000 bytes. 0x416c0 bytes (26%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\leona\Desktop\SoSe25\BA\MCU_boards\ESP32\WLAN_MEMS\build\bootloader\esp-idf\esptool_py && C:\Users\leona\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/leona/esp_container/v5.4.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\leona\esp_container\v5.4.1\esp-idf\components\esptool_py && C:\Users\leona\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/leona/esp_container/v5.4.1/esp-idf -D SERIAL_TOOL=C:/Users/leona/.espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build -P C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 WLAN_MEMS.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM5
+Connecting..........
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 94:b9:7e:e9:09:0c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000cefff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16378...
+Writing at 0x00001000... (100 %)
+Wrote 25984 bytes (16378 compressed) at 0x00001000 in 0.7 seconds (effective 292.0 kbit/s)...
+Hash of data verified.
+Compressed 780608 bytes to 490347...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cc39... (6 %)
+Writing at 0x000259ba... (10 %)
+Writing at 0x00030861... (13 %)
+Writing at 0x0003602a... (16 %)
+Writing at 0x0003c364... (20 %)
+Writing at 0x0004220d... (23 %)
+Writing at 0x00048196... (26 %)
+Writing at 0x0004dd16... (30 %)
+Writing at 0x00053d54... (33 %)
+Writing at 0x00058fa8... (36 %)
+Writing at 0x0005e539... (40 %)
+Writing at 0x00063d4e... (43 %)
+Writing at 0x0006921f... (46 %)
+Writing at 0x0006e5b6... (50 %)
+Writing at 0x00073ce0... (53 %)
+Writing at 0x0007a010... (56 %)
+Writing at 0x0007f921... (60 %)
+Writing at 0x00085465... (63 %)
+Writing at 0x0008b23b... (66 %)
+Writing at 0x00090a53... (70 %)
+Writing at 0x0009677f... (73 %)
+Writing at 0x0009c126... (76 %)
+Writing at 0x000a1bb0... (80 %)
+Writing at 0x000ab46f... (83 %)
+Writing at 0x000b2513... (86 %)
+Writing at 0x000b82e9... (90 %)
+Writing at 0x000bdd82... (93 %)
+Writing at 0x000c3f8d... (96 %)
+Writing at 0x000c9727... (100 %)
+Wrote 780608 bytes (490347 compressed) at 0x00010000 in 11.6 seconds (effective 539.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 415.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,7 @@
+source "C:/Users/leona/esp_container/v5.4.1/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/leona/esp_container/v5.4.1/esp-idf/components/partition_table/Kconfig.projbuild"
+source "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/main/Kconfig.projbuild"
+source "C:/Users/leona/esp_container/v5.4.1/esp-idf/examples/common_components/protocol_examples_common/Kconfig.projbuild"

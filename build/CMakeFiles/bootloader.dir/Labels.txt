@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/CMakeFiles/bootloader
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/CMakeFiles/bootloader.rule
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/CMakeFiles/bootloader-complete.rule
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

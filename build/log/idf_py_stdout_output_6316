@@ -1,0 +1,21 @@
+[0/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\leona\Desktop\SoSe25\BA\MCU_boards\ESP32\WLAN_MEMS\build && C:\Users\leona\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_SIZE_TOOL=C:/Users/leona/.espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;-m;esp_idf_size -D MAP_FILE=C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/WLAN_MEMS.map -D OUTPUT_JSON= -P C:/Users/leona/esp_container/v5.4.1/esp-idf/tools/cmake/run_size_tool.cmake"
+                             Memory Type Usage Summary                              
++----------------------------------------------------------------------------------+
+| Memory Type/Section   | Used [bytes] | Used [%] | Remain [bytes] | Total [bytes] |
+|-----------------------+--------------+----------+----------------+---------------|
+| Flash Code            |       559806 |    16.75 |        2782498 |       3342304 |
+|    .text              |       559806 |    16.75 |                |               |
+| Flash Data            |       110052 |     2.62 |        4084220 |       4194272 |
+|    .rodata            |       109796 |     2.62 |                |               |
+|    .appdesc           |          256 |     0.01 |                |               |
+| IRAM                  |       100547 |    76.71 |          30525 |        131072 |
+|    .text              |        99519 |    75.93 |                |               |
+|    .vectors           |         1027 |     0.78 |                |               |
+| DRAM                  |        33376 |    18.47 |         147360 |        180736 |
+|    .bss               |        17104 |     9.46 |                |               |
+|    .data              |        16272 |      9.0 |                |               |
+| RTC FAST              |           28 |     0.34 |           8164 |          8192 |
+|    .force_fast        |           28 |     0.34 |                |               |
+| RTC SLOW              |           24 |     0.29 |           8168 |          8192 |
+|    .rtc_slow_reserved |           24 |     0.29 |                |               |
++----------------------------------------------------------------------------------+

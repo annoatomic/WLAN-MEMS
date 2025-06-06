@@ -1,0 +1,333 @@
+����2: SPI Speed      ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (30) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun  4 2025 23:19:08[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ade4h (110052) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=0002ae0c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0002ae30 vaddr=3ffb0000 size=03f90h ( 16272) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=0002edc8 vaddr=40080000 size=01250h (  4688) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=88ac0h (559808) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b8ae8 vaddr=40081250 size=17674h ( 95860) load[0m
+[0;32mI (386) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (405) cpu_start: Pro cpu start user code[0m
+[0;32mI (405) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (405) app_init: Application information:[0m
+[0;32mI (405) app_init: Project name:     WLAN_MEMS[0m
+[0;32mI (409) app_init: App version:      94658d3-dirty[0m
+[0;32mI (413) app_init: Compile time:     Jun  4 2025 23:17:50[0m
+[0;32mI (418) app_init: ELF file SHA256:  c929fcfa5...[0m
+[0;32mI (423) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (445) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8260 len 00027DA0 (159 KiB): DRAM[0m
+[0;32mI (455) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 400988C4 len 0000773C (29 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (475) spi_flash: flash io: dio[0m
+[0;33mW (478) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (490) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (497) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (509) main_task: Started on CPU0[0m
+[0;32mI (519) main_task: Calling app_main()[0m
+[0;32mI (549) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (569) wifi:wifi driver task: 3ffcd8b8, prio:23, stack:6656, core=0[0m
+[0;32mI (589) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (589) wifi:wifi certification version: v7.0[0m
+[0;32mI (589) wifi:config NVS flash: enabled[0m
+[0;32mI (589) wifi:config nano formatting: disabled[0m
+[0;32mI (589) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (599) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (599) wifi:Init management short buffer num: 32[0m
+[0;32mI (599) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (609) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (609) wifi:Init static rx buffer num: 10[0m
+[0;32mI (619) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (619) wifi_init: rx ba win: 6[0m
+[0;32mI (619) wifi_init: accept mbox: 6[0m
+[0;32mI (629) wifi_init: tcpip mbox: 32[0m
+[0;32mI (629) wifi_init: udp mbox: 6[0m
+[0;32mI (629) wifi_init: tcp mbox: 6[0m
+[0;32mI (629) wifi_init: tcp tx win: 5760[0m
+[0;32mI (639) wifi_init: tcp rx win: 5760[0m
+[0;32mI (639) wifi_init: tcp mss: 1440[0m
+[0;32mI (639) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (649) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (659) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (739) wifi:mode : softAP (94:b9:7e:e9:09:0d)[0m
+[0;32mI (739) wifi:Total power save buffer number: 16[0m
+[0;32mI (739) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (739) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (749) main_task: Returned from app_main()[0m
+[0;32mI (749) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[1;31mE (769) UDP_BC: sendto errno=12[0m
+[1;31mE (769) UDP_BC: sendto errno=12[0m
+[1;31mE (779) UDP_BC: sendto errno=12[0m
+[1;31mE (799) UDP_BC: sendto errno=12[0m
+[1;31mE (809) UDP_BC: sendto errno=12[0m
+[1;31mE (819) UDP_BC: sendto errno=12[0m
+[1;31mE (839) UDP_BC: sendto errno=12[0m
+[1;31mE (849) UDP_BC: sendto errno=12[0m
+[1;31mE (869) UDP_BC: sendto errno=12[0m
+[1;31mE (879) UDP_BC: sendto errno=12[0m
+[1;31mE (889) UDP_BC: sendto errno=12[0m
+[1;31mE (909) UDP_BC: sendto errno=12[0m
+[1;31mE (919) UDP_BC: sendto errno=12[0m
+[1;31mE (939) UDP_BC: sendto errno=12[0m
+[1;31mE (949) UDP_BC: sendto errno=12[0m
+[1;31mE (969) UDP_BC: sendto errno=12[0m
+[1;31mE (989) UDP_BC: sendto errno=12[0m
+[1;31mE (999) UDP_BC: sendto errno=12[0m
+[1;31mE (1019) UDP_BC: sendto errno=12[0m
+[1;31mE (1029) UDP_BC: sendto errno=12[0m
+[1;31mE (1049) UDP_BC: sendto errno=12[0m
+[1;31mE (1059) UDP_BC: sendto errno=12[0m
+[1;31mE (1069) UDP_BC: sendto errno=12[0m
+[1;31mE (1089) UDP_BC: sendto errno=12[0m
+[1;31mE (1099) UDP_BC: sendto errno=12[0m
+[1;31mE (1119) UDP_BC: sendto errno=12[0m
+[1;31mE (1129) UDP_BC: sendto errno=12[0m
+[1;31mE (1139) UDP_BC: sendto errno=12[0m
+[1;31mE (1159) UDP_BC: sendto errno=12[0m
+[1;31mE (1169) UDP_BC: sendto errno=12[0m
+[1;31mE (1179) UDP_BC: sendto errno=12[0m
+[1;31mE (1199) UDP_BC: sendto errno=12[0m
+[1;31mE (1219) UDP_BC: sendto errno=12[0m
+[1;31mE (1229) UDP_BC: sendto errno=12[0m
+[1;31mE (1249) UDP_BC: sendto errno=12[0m
+[1;31mE (1269) UDP_BC: sendto errno=12[0m
+[1;31mE (1279) UDP_BC: sendto errno=12[0m
+[1;31mE (1289) UDP_BC: sendto errno=12[0m
+[1;31mE (1309) UDP_BC: sendto errno=12[0m
+[1;31mE (1319) UDP_BC: sendto errno=12[0m
+[1;31mE (1339) UDP_BC: sendto errno=12[0m
+[1;31mE (1359) UDP_BC: sendto errno=12[0m
+[1;31mE (1369) UDP_BC: sendto errno=12[0m
+[1;31mE (1389) UDP_BC: sendto errno=12[0m
+[1;31mE (1409) UDP_BC: sendto errno=12[0m
+[1;31mE (1419) UDP_BC: sendto errno=12[0m
+[1;31mE (1429) UDP_BC: sendto errno=12[0m
+[1;31mE (1449) UDP_BC: sendto errno=12[0m
+[1;31mE (1459) UDP_BC: sendto errno=12[0m
+[1;31mE (1469) UDP_BC: sendto errno=12[0m
+[1;31mE (1489) UDP_BC: sendto errno=12[0m
+[1;31mE (1509) UDP_BC: sendto errno=12[0m
+[1;31mE (1519) UDP_BC: sendto errno=12[0m
+[1;31mE (1539) UDP_BC: sendto errno=12[0m
+[1;31mE (1549) UDP_BC: sendto errno=12[0m
+[1;31mE (1559) UDP_BC: sendto errno=12[0m
+[1;31mE (1569) UDP_BC: sendto errno=12[0m
+[1;31mE (1589) UDP_BC: sendto errno=12[0m
+[1;31mE (1609) UDP_BC: sendto errno=12[0m
+[1;31mE (1619) UDP_BC: sendto errno=12[0m
+[1;31mE (1639) UDP_BC: sendto errno=12[0m
+[1;31mE (1649) UDP_BC: sendto errno=12[0m
+[1;31mE (1669) UDP_BC: sendto errno=12[0m
+[1;31mE (1679) UDP_BC: sendto errno=12[0m
+[1;31mE (1699) UDP_BC: sendto errno=12[0m
+[1;31mE (1709) UDP_BC: sendto errno=12[0m
+[1;31mE (1719) UDP_BC: sendto errno=12[0m
+[1;31mE (1739) UDP_BC: sendto errno=12[0m
+[1;31mE (1759) UDP_BC: sendto errno=12[0m
+[1;31mE (1769) UDP_BC: sendto errno=12[0m
+[1;31mE (1789) UDP_BC: sendto errno=12[0m
+[1;31mE (1809) UDP_BC: sendto errno=12[0m
+[1;31mE (1819) UDP_BC: sendto errno=12[0m
+[1;31mE (1829) UDP_BC: sendto errno=12[0m
+[1;31mE (1849) UDP_BC: sendto errno=12[0m
+[1;31mE (1859) UDP_BC: sendto errno=12[0m
+[1;31mE (1879) UDP_BC: sendto errno=12[0m
+[1;31mE (1889) UDP_BC: sendto errno=12[0m
+[1;31mE (1909) UDP_BC: sendto errno=12[0m
+[1;31mE (1929) UDP_BC: sendto errno=12[0m
+[1;31mE (1939) UDP_BC: sendto errno=12[0m
+[1;31mE (1959) UDP_BC: sendto errno=12[0m
+[1;31mE (1969) UDP_BC: sendto errno=12[0m
+[1;31mE (1989) UDP_BC: sendto errno=12[0m
+[1;31mE (1999) UDP_BC: sendto errno=12[0m
+[1;31mE (2009) UDP_BC: sendto errno=12[0m
+[1;31mE (2029) UDP_BC: sendto errno=12[0m
+[1;31mE (2039) UDP_BC: sendto errno=12[0m
+[1;31mE (2059) UDP_BC: sendto errno=12[0m
+[1;31mE (2069) UDP_BC: sendto errno=12[0m
+[1;31mE (2079) UDP_BC: sendto errno=12[0m
+[1;31mE (2099) UDP_BC: sendto errno=12[0m
+[1;31mE (2109) UDP_BC: sendto errno=12[0m
+[1;31mE (2129) UDP_BC: sendto errno=12[0m
+[1;31mE (2149) UDP_BC: sendto errno=12[0m
+[1;31mE (2159) UDP_BC: sendto errno=12[0m
+[1;31mE (2179) UDP_BC: sendto errno=12[0m
+[1;31mE (2189) UDP_BC: sendto errno=12[0m
+[1;31mE (2209) UDP_BC: sendto errno=12[0m
+[1;31mE (2219) UDP_BC: sendto errno=12[0m
+[1;31mE (2239) UDP_BC: sendto errno=12[0m
+[1;31mE (2249) UDP_BC: sendto errno=12[0m
+[1;31mE (2259) UDP_BC: sendto errno=12[0m
+[1;31mE (2279) UDP_BC: sendto errno=12[0m
+[1;31mE (2289) UDP_BC: sendto errno=12[0m
+[1;31mE (2309) UDP_BC: sendto errno=12[0m
+[1;31mE (2329) UDP_BC: sendto errno=12[0m
+[1;31mE (2339) UDP_BC: sendto errno=12[0m
+[1;31mE (2359) UDP_BC: sendto errno=12[0m
+[1;31mE (2369) UDP_BC: sendto errno=12[0m
+[1;31mE (2389) UDP_BC: sendto errno=12[0m
+[1;31mE (2399) UDP_BC: sendto errno=12[0m
+[1;31mE (2419) UDP_BC: sendto errno=12[0m
+[1;31mE (2429) UDP_BC: sendto errno=12[0m
+[1;31mE (2449) UDP_BC: sendto errno=12[0m
+[1;31mE (2469) UDP_BC: sendto errno=12[0m
+[1;31mE (2479) UDP_BC: sendto errno=12[0m
+[1;31mE (2489) UDP_BC: sendto errno=12[0m
+[1;31mE (2509) UDP_BC: sendto errno=12[0m
+[1;31mE (2519) UDP_BC: sendto errno=12[0m
+[1;31mE (2529) UDP_BC: sendto errno=12[0m
+[1;31mE (2549) UDP_BC: sendto errno=12[0m
+[1;31mE (2569) UDP_BC: sendto errno=12[0m
+[1;31mE (2579) UDP_BC: sendto errno=12[0m
+[1;31mE (2599) UDP_BC: sendto errno=12[0m
+[1;31mE (2609) UDP_BC: sendto errno=12[0m
+[1;31mE (2619) UDP_BC: sendto errno=12[0m
+[1;31mE (2639) UDP_BC: sendto errno=12[0m
+[1;31mE (2659) UDP_BC: sendto errno=12[0m
+[1;31mE (2669) UDP_BC: sendto errno=12[0m
+[1;31mE (2689) UDP_BC: sendto errno=12[0m
+[1;31mE (2709) UDP_BC: sendto errno=12[0m
+[1;31mE (2719) UDP_BC: sendto errno=12[0m
+[1;31mE (2729) UDP_BC: sendto errno=12[0m
+[1;31mE (2749) UDP_BC: sendto errno=12[0m
+[1;31mE (2759) UDP_BC: sendto errno=12[0m
+[1;31mE (2779) UDP_BC: sendto errno=12[0m
+[1;31mE (2789) UDP_BC: sendto errno=12[0m
+[1;31mE (2799) UDP_BC: sendto errno=12[0m
+[1;31mE (2819) UDP_BC: sendto errno=12[0m
+[1;31mE (2829) UDP_BC: sendto errno=12[0m
+[1;31mE (2849) UDP_BC: sendto errno=12[0m
+[1;31mE (2859) UDP_BC: sendto errno=12[0m
+[1;31mE (2879) UDP_BC: sendto errno=12[0m
+[1;31mE (2889) UDP_BC: sendto errno=12[0m
+[1;31mE (2899) UDP_BC: sendto errno=12[0m
+[1;31mE (2919) UDP_BC: sendto errno=12[0m
+[1;31mE (2939) UDP_BC: sendto errno=12[0m
+[1;31mE (2949) UDP_BC: sendto errno=12[0m
+[1;31mE (2969) UDP_BC: sendto errno=12[0m
+[1;31mE (2979) UDP_BC: sendto errno=12[0m
+[1;31mE (2999) UDP_BC: sendto errno=12[0m
+[1;31mE (3009) UDP_BC: sendto errno=12[0m
+[1;31mE (3019) UDP_BC: sendto errno=12[0m
+[1;31mE (3039) UDP_BC: sendto errno=12[0m
+[1;31mE (3049) UDP_BC: sendto errno=12[0m
+[1;31mE (3069) UDP_BC: sendto errno=12[0m
+[1;31mE (3079) UDP_BC: sendto errno=12[0m
+[1;31mE (3089) UDP_BC: sendto errno=12[0m
+[1;31mE (3109) UDP_BC: sendto errno=12[0m
+[1;31mE (3119) UDP_BC: sendto errno=12[0m
+[1;31mE (3139) UDP_BC: sendto errno=12[0m
+[1;31mE (3149) UDP_BC: sendto errno=12[0m
+[1;31mE (3169) UDP_BC: sendto errno=12[0m
+[1;31mE (3179) UDP_BC: sendto errno=12[0m
+[1;31mE (3189) UDP_BC: sendto errno=12[0m
+[1;31mE (3209) UDP_BC: sendto errno=12[0m
+[1;31mE (3219) UDP_BC: sendto errno=12[0m
+[1;31mE (3239) UDP_BC: sendto errno=12[0m
+[1;31mE (3259) UDP_BC: sendto errno=12[0m
+[1;31mE (3269) UDP_BC: sendto errno=12[0m
+[1;31mE (3289) UDP_BC: sendto errno=12[0m
+[1;31mE (3299) UDP_BC: sendto errno=12[0m
+[1;31mE (3309) UDP_BC: sendto errno=12[0m
+[1;31mE (3329) UDP_BC: sendto errno=12[0m
+[1;31mE (3349) UDP_BC: sendto errno=12[0m
+[1;31mE (3359) UDP_BC: sendto errno=12[0m
+[1;31mE (3379) UDP_BC: sendto errno=12[0m
+[1;31mE (3389) UDP_BC: sendto errno=12[0m
+[1;31mE (3399) UDP_BC: sendto errno=12[0m
+[1;31mE (3419) UDP_BC: sendto errno=12[0m
+[1;31mE (3429) UDP_BC: sendto errno=12[0m
+[1;31mE (3449) UDP_BC: sendto errno=12[0m
+[1;31mE (3459) UDP_BC: sendto errno=12[0m
+[1;31mE (3479) UDP_BC: sendto errno=12[0m
+[1;31mE (3489) UDP_BC: sendto errno=12[0m
+[1;31mE (3499) UDP_BC: sendto errno=12[0m
+[1;31mE (3509) UDP_BC: sendto errno=12[0m
+[1;31mE (3529) UDP_BC: sendto errno=12[0m
+[1;31mE (3549) UDP_BC: sendto errno=12[0m
+[1;31mE (3559) UDP_BC: sendto errno=12[0m
+[1;31mE (3579) UDP_BC: sendto errno=12[0m
+[1;31mE (3589) UDP_BC: sendto errno=12[0m
+[1;31mE (3609) UDP_BC: sendto errno=12[0m
+[1;31mE (3619) UDP_BC: sendto errno=12[0m
+[1;31mE (3629) UDP_BC: sendto errno=12[0m
+[1;31mE (3649) UDP_BC: sendto errno=12[0m
+[1;31mE (3669) UDP_BC: sendto errno=12[0m
+[1;31mE (3679) UDP_BC: sendto errno=12[0m
+[1;31mE (3699) UDP_BC: sendto errno=12[0m
+[1;31mE (3709) UDP_BC: sendto errno=12[0m
+[1;31mE (3719) UDP_BC: sendto errno=12[0m
+[1;31mE (3729) UDP_BC: sendto errno=12[0m
+[1;31mE (3749) UDP_BC: sendto errno=12[0m
+[1;31mE (3759) UDP_BC: sendto errno=12[0m
+[1;31mE (3779) UDP_BC: sendto errno=12[0m
+[1;31mE (3799) UDP_BC: sendto errno=12[0m
+[1;31mE (3809) UDP_BC: sendto errno=12[0m
+[1;31mE (3819) UDP_BC: sendto errno=12[0m
+[1;31mE (3839) UDP_BC: sendto errno=12[0m
+[1;31mE (3849) UDP_BC: sendto errno=12[0m
+[1;31mE (3869) UDP_BC: sendto errno=12[0m
+[1;31mE (3879) UDP_BC: sendto errno=12[0m
+[1;31mE (3899) UDP_BC: sendto errno=12[0m
+[1;31mE (3909) UDP_BC: sendto errno=12[0m
+[1;31mE (3929) UDP_BC: sendto errno=12[0m
+[1;31mE (3939) UDP_BC: sendto errno=12[0m
+[1;31mE (3959) UDP_BC: sendto errno=12[0m
+[1;31mE (3969) UDP_BC: sendto errno=12[0m
+[1;31mE (3989) UDP_BC: sendto errno=12[0m
+[1;31mE (3999) UDP_BC: sendto errno=12[0m
+[1;31mE (4019) UDP_BC: sendto errno=12[0m
+[1;31mE (4029) UDP_BC: sendto errno=12[0m
+[1;31mE (4049) UDP_BC: sendto errno=12[0m
+[1;31mE (4059) UDP_BC: sendto errno=12[0m
+[1;31mE (4079) UDP_BC: sendto errno=12[0m
+[1;31mE (4089) UDP_BC: sendto errno=12[0m
+[1;31mE (4099) UDP_BC: sendto errno=12[0m
+[1;31mE (4119) UDP_BC: sendto errno=12[0m
+[1;31mE (4129) UDP_BC: sendto errno=12[0m
+[1;31mE (4149) UDP_BC: sendto errno=12[0m
+[1;31mE (4159) UDP_BC: sendto errno=12[0m
+[1;31mE (4169) UDP_BC: sendto errno=12[0m
+[1;31mE (4189) UDP_BC: sendto errno=12[0m
+[1;31mE (4199) UDP_BC: sendto errno=12[0m
+[1;31mE (4219) UDP_BC: sendto errno=12[0m
+[1;31mE (4239) UDP_BC: sendto errno=12[0m
+[1;31mE (4249) UDP_BC: sendto errno=12[0m
+[1;31mE (4269) UDP_BC: sendto errno=12[0m
+[1;31mE (4279) UDP_BC: sendto errno=12[0m
+[1;31mE (4299) UDP_BC: sendto errno=12[0m
+[1;31mE (4309) UDP_BC: sendto errno=12[0m
+[1;31mE (4329) UDP_BC: sendto errno=12[0m
+[1;31mE (4339) UDP_BC: send
