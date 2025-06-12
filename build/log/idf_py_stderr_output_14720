@@ -1,0 +1,85 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081c81: panic_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4008a8a9: esp_system_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4009263d: __assert_func at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/newlib/assert.c:80
+--- 0x400e3053: tcpip_send_msg_wait_sem at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+--- 0x400f215a: netconn_apimsg at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400f21ed: netconn_new_with_proto_and_callback at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400e282a: lwip_socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/sockets.c:1746 (discriminator 12)
+--- 0x400d8af8: socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/include/lwip/sockets.h:48
+---  (inlined by) udp_broadcast_task at C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/main/WLAN_MEMS.c:260
+--- 0x4008b375: vPortTaskWrapper at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081c81: panic_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4008a8a9: esp_system_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4009263d: __assert_func at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/newlib/assert.c:80
+--- 0x400e3053: tcpip_send_msg_wait_sem at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+--- 0x400f215a: netconn_apimsg at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400f21ed: netconn_new_with_proto_and_callback at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400e282a: lwip_socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/sockets.c:1746 (discriminator 12)
+--- 0x400d8af8: socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/include/lwip/sockets.h:48
+---  (inlined by) udp_broadcast_task at C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/main/WLAN_MEMS.c:260
+--- 0x4008b375: vPortTaskWrapper at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400e3053: tcpip_send_msg_wait_sem at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+[0m
+[0;33m--- 0x400f215a: netconn_apimsg at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+[0m
+[0;33m--- 0x400f21ed: netconn_new_with_proto_and_callback at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081c81: panic_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4008a8a9: esp_system_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4009263d: __assert_func at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/newlib/assert.c:80
+--- 0x400e3053: tcpip_send_msg_wait_sem at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+--- 0x400f215a: netconn_apimsg at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400f21ed: netconn_new_with_proto_and_callback at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400e282a: lwip_socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/sockets.c:1746 (discriminator 12)
+--- 0x400d8af8: socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/include/lwip/sockets.h:48
+---  (inlined by) udp_broadcast_task at C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/main/WLAN_MEMS.c:260
+--- 0x4008b375: vPortTaskWrapper at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081c81: panic_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4008a8a9: esp_system_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4009263d: __assert_func at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/newlib/assert.c:80
+--- 0x400e3053: tcpip_send_msg_wait_sem at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+--- 0x400f215a: netconn_apimsg at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400f21ed: netconn_new_with_proto_and_callback at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400e282a: lwip_socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/sockets.c:1746 (discriminator 12)
+--- 0x400d8af8: socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/include/lwip/sockets.h:48
+---  (inlined by) udp_broadcast_task at C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/main/WLAN_MEMS.c:260
+--- 0x4008b375: vPortTaskWrapper at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081c81: panic_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4008a8a9: esp_system_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4009263d: __assert_func at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/newlib/assert.c:80
+--- 0x400e3053: tcpip_send_msg_wait_sem at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+--- 0x400f215a: netconn_apimsg at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400f21ed: netconn_new_with_proto_and_callback at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400e282a: lwip_socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/sockets.c:1746 (discriminator 12)
+--- 0x400d8af8: socket at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/include/lwip/sockets.h:48
+---  (inlined by) udp_broadcast_task at C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/main/WLAN_MEMS.c:260
+--- 0x4008b375: vPortTaskWrapper at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081c81: panic_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x4008a8a9: esp_system_abort at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4009263d: __assert_func at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/newlib/assert.c:80
+--- 0x400e3053: tcpip_send_msg_wait_sem at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+--- 0x400f215a: netconn_apimsg at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400f21ed: netconn_new_with_proto_and_callback at C:/Users/leona/esp_container/v5.4.1/esp-idf/components/lwip/lwip/src/api/

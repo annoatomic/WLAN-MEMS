@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "WLAN_MEMS",
-    "project_version":    "94658d3-dirty",
+    "project_version":    "7c49bee-dirty",
     "project_path":       "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS",
     "idf_path":           "C:/Users/leona/esp_container/v5.4.1/esp-idf",
     "build_dir":          "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build",

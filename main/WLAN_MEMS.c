@@ -20,6 +20,8 @@
 #include "protocol_examples_common.h"
 #include "esp_err.h"
 #include "freertos/ringbuf.h"
+#include "esp_timer.h"
+
 
 #include "lwip/err.h"
 #include "lwip/sockets.h"
@@ -32,7 +34,7 @@
 static RingbufHandle_t audio_rb;        // globales Handle
 //----------------------------------------
 
-#define PIN_LED      33
+#define PIN_LED      2
 #define I2S_NUM         I2S_NUM_0
 #define I2S_CLK      26      // Bit Clock (SCK)
 #define I2S_WS       25      // Word Select (WS)
@@ -150,7 +152,7 @@ static void start_softap(void)
     /* 4. AP-Parameter setzen  */
     wifi_config_t ap = {
         .ap = {
-            .ssid           = "Merle hat gefurzt",
+            .ssid           = "Leo's Station",
             .password       = "12345678",
             .channel        = 1,
             .max_connection = 2,
@@ -171,7 +173,9 @@ static void start_softap(void)
 
 static void udp_stream_task(void *arg)
 {
-    uint32_t pkt_cnt = 0;
+    //uint32_t pkt_cnt = 0;
+    uint32_t pkt_cnt = 0, pkt_sec = 0;
+    int64_t last = esp_timer_get_time();
     struct sockaddr_in dest = {0};
     dest.sin_family      = AF_INET;
     dest.sin_port        = htons(DEST_PORT);
@@ -203,8 +207,18 @@ static void udp_stream_task(void *arg)
         /* schicken, ggf. mit Back-off warten                           */
         while (1) {
             ssize_t sent = sendto(sock, pkt, MTU_PAYLOAD, 0,
-                                  (struct sockaddr *)&dest, sizeof(dest));
+                (struct sockaddr *)&dest, sizeof(dest));
+            
             if (sent >= 0) {
+                    // nach jedem erfolgreichen sendto:
+                    pkt_sec++;
+                    int64_t now = esp_timer_get_time();
+                    if (now - last >= 1000000) { // jede Sekunde
+                    printf("UDP-Pakete gesendet pro Sekunde: %ld\n", pkt_sec);
+                    pkt_sec = 0;
+                    last = now;
+                    }
+
                  /* ---------- LED heartbeat ---------- */
                 if (++pkt_cnt >= 50) {                 // alle 10 Pakete = 5 Hz
                 pkt_cnt = 0;
@@ -273,6 +287,10 @@ void app_main(void)
     io_init();
     i2s_init();
     xTaskCreatePinnedToCore(i2s_reader_task, "i2s_read", 4096, NULL, 22, NULL, 1);
+    // Aufrufen, wenn du sie brauchst:
+    //xTaskCreate(udp_broadcast_task, "udp_bcast", 2048, NULL, 4, NULL);
+
+
 
     start_softap();
     xTaskCreate(udp_stream_task, "udp_send", 4096, NULL, 5, NULL);

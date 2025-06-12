@@ -1,0 +1,7 @@
+[1/4] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\leona\Desktop\SoSe25\BA\MCU_boards\ESP32\WLAN_MEMS\build\esp-idf\esptool_py && C:\Users\leona\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/leona/esp_container/v5.4.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/partition_table/partition-table.bin C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/WLAN_MEMS.bin"
+WLAN_MEMS.bin binary size 0xc0630 bytes. Smallest app partition is 0x100000 bytes. 0x3f9d0 bytes (25%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\leona\Desktop\SoSe25\BA\MCU_boards\ESP32\WLAN_MEMS\build\bootloader\esp-idf\esptool_py && C:\Users\leona\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/leona/esp_container/v5.4.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'
