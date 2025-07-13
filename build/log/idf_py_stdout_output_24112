@@ -1,0 +1,29 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Leonard\Documents\WLAN_MEMS\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5490 bytes. 0x2b70 bytes (34%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/WLAN_MEMS.c.obj
+In file included from C:/Users/Leonard/Documents/WLAN_MEMS/main/WLAN_MEMS.c:2:
+C:/Espressif/frameworks/esp-idf-v5.3.3/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+C:/Users/Leonard/Documents/WLAN_MEMS/main/WLAN_MEMS.c: In function 'i2s_init':
+C:/Users/Leonard/Documents/WLAN_MEMS/main/WLAN_MEMS.c:83:9: warning: 'I2S_COMM_FORMAT_I2S' is deprecated [-Wdeprecated-declarations]
+   83 |         .communication_format = I2S_COMM_FORMAT_I2S,
+      |         ^
+In file included from C:/Espressif/frameworks/esp-idf-v5.3.3/components/driver/deprecated/driver/i2s.h:20:
+C:/Espressif/frameworks/esp-idf-v5.3.3/components/driver/deprecated/driver/i2s_types_legacy.h:88:5: note: declared here
+   88 |     I2S_COMM_FORMAT_I2S       __attribute__((deprecated)) = 0x01, /*!< I2S communication format I2S, correspond to `I2S_COMM_FORMAT_STAND_I2S`*/
+      |     ^~~~~~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable WLAN_MEMS.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/Leonard/Documents/WLAN_MEMS/build/WLAN_MEMS.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Leonard\Documents\WLAN_MEMS\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Leonard/Documents/WLAN_MEMS/build/partition_table/partition-table.bin C:/Users/Leonard/Documents/WLAN_MEMS/build/WLAN_MEMS.bin"
+WLAN_MEMS.bin binary size 0xbe6f0 bytes. Smallest app partition is 0x100000 bytes. 0x41910 bytes (26%) free.

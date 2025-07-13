@@ -1,0 +1,70 @@
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Leonard\Documents\WLAN_MEMS\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Leonard/Documents/WLAN_MEMS/build/partition_table/partition-table.bin C:/Users/Leonard/Documents/WLAN_MEMS/build/WLAN_MEMS.bin"
+WLAN_MEMS.bin binary size 0xbe580 bytes. Smallest app partition is 0x100000 bytes. 0x41a80 bytes (26%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Leonard\Documents\WLAN_MEMS\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5490 bytes. 0x2b70 bytes (34%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.3\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.3 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.3/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Leonard/Documents/WLAN_MEMS/build -P C:/Espressif/frameworks/esp-idf-v5.3.3/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 WLAN_MEMS.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM6
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: fc:01:2c:cb:6a:b8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000cefff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21648 bytes to 13313...
+Writing at 0x00000000... (100 %)
+Wrote 21648 bytes (13313 compressed) at 0x00000000 in 0.6 seconds (effective 278.8 kbit/s)...
+Hash of data verified.
+Compressed 779648 bytes to 480033...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d7f1... (6 %)
+Writing at 0x00026c5b... (10 %)
+Writing at 0x00031da8... (13 %)
+Writing at 0x00037fad... (16 %)
+Writing at 0x0003e7dc... (20 %)
+Writing at 0x0004464a... (23 %)
+Writing at 0x00049f7b... (26 %)
+Writing at 0x0004fae7... (30 %)
+Writing at 0x00055884... (33 %)
+Writing at 0x0005b894... (36 %)
+Writing at 0x0006153e... (40 %)
+Writing at 0x00067803... (43 %)
+Writing at 0x0006c6ed... (46 %)
+Writing at 0x00071997... (50 %)
+Writing at 0x00076801... (53 %)
+Writing at 0x0007bc40... (56 %)
+Writing at 0x00081036... (60 %)
+Writing at 0x0008666f... (63 %)
+Writing at 0x0008c78a... (66 %)
+Writing at 0x000920b0... (70 %)
+Writing at 0x00097de9... (73 %)
+Writing at 0x0009d650... (76 %)
+Writing at 0x000a2f22... (80 %)
+Writing at 0x000ae516... (83 %)
+Writing at 0x000b44a9... (86 %)
+Writing at 0x000baad8... (90 %)
+Writing at 0x000c0b35... (93 %)
+Writing at 0x000c7392... (96 %)
+Writing at 0x000cc4a6... (100 %)
+Wrote 779648 bytes (480033 compressed) at 0x00010000 in 11.0 seconds (effective 564.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 463.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

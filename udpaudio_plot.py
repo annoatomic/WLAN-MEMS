@@ -6,7 +6,7 @@ import threading
 import sounddevice as sd
 import time
 
-FILL_SECONDS = 2  # den Buffer mit 0.5s bevor du Ton startest
+FILL_SECONDS = 0  # den Buffer mit 0.5s bevor du Ton startest
 
 # -- UDP-Settings: --------------------------------
 UDP_IP = ""            # alle Schnittstellen

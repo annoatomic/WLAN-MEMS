@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION 3.5)
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "C:/Users/leona/esp_container/v5.4.1/esp-idf/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "C:/Users/leona/esp_container/v5.4.1/esp-idf/components/bootloader/subproject")
+if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.3.3/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.3.3/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader"
-  "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix"
-  "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/tmp"
-  "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src"
-  "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader"
+  "C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader-prefix"
+  "C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader-prefix/tmp"
+  "C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader-prefix/src"
+  "C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/leona/Desktop/SoSe25/BA/MCU_boards/ESP32/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/Leonard/Documents/WLAN_MEMS/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
